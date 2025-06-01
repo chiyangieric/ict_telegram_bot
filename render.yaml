@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ict-telegram-signal-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python telegram_alert_bot.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 7749707303:AAEbSEOBTYL9X1duov32DnDh9PZ1MPJ7lHM
